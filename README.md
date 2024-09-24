@@ -13,19 +13,11 @@
 
 ## 📚 **Project Overview**
 
-Welcome to our **Software Quality** assignment! This repository contains a **Task Manager Application** designed as part of our school assignment. Our key focus is on delivering quality software through:
+Welcome to our **Software Quality** assignment! This repository contains a *our projects** designed as part of our school assignment. Our key focus is on delivering quality software through:
 
 - ✅ **Unit and Integration Testing**
 - 🚀 **Performance Testing**
 - 🔄 **Ensuring Scalability and Code Quality**
-
-## ⚙️ **Key Features**
-
-- 📝 **Task Management**: Create, edit, delete, and track tasks.
-- 📂 **Categories**: Assign tasks to categories for better organization.
-- ⏳ **Deadline Management**: Set and track deadlines for each task.
-- 📊 **Performance Testing**: Analyze load using JMeter with 50-100 concurrent users.
-- ✅ **Comprehensive Testing**: Ensure full coverage through unit and integration tests.
 
 ---
 
@@ -46,10 +38,5 @@ Our primary focus is on **software quality**. Here's how we ensure it:
 Make sure you have the following tools installed:
 - [.NET 6.0](https://dotnet.microsoft.com/download) or later
 - [JMeter](https://jmeter.apache.org/) for load testing
+- Postman
 - An IDE supporting .NET (like [Visual Studio](https://visualstudio.microsoft.com/))
-
-### Installation
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/your-repo/school-assignment-software-quality.git

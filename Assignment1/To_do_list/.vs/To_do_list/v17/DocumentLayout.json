@@ -1,0 +1,108 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\moham\\source\\repos\\GroupB\\To_do_list\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9526075E-60A0-4EC3-949D-50FE436151B2}|..\\Todolist.Tests\\Todolist.Tests.csproj|c:\\users\\moham\\source\\repos\\groupb\\todolist.tests\\taskservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B981AF6-9B71-4360-A5AC-DD66B3222DDE}|To_do_list.csproj|c:\\users\\moham\\source\\repos\\groupb\\to_do_list\\to_do_list.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4B981AF6-9B71-4360-A5AC-DD66B3222DDE}|To_do_list.csproj|solutionrelative:to_do_list.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9526075E-60A0-4EC3-949D-50FE436151B2}|..\\Todolist.Tests\\Todolist.Tests.csproj|c:\\users\\moham\\source\\repos\\groupb\\todolist.tests\\taskserviceintegrationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B981AF6-9B71-4360-A5AC-DD66B3222DDE}|To_do_list.csproj|c:\\users\\moham\\source\\repos\\groupb\\to_do_list\\controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B981AF6-9B71-4360-A5AC-DD66B3222DDE}|To_do_list.csproj|solutionrelative:controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B981AF6-9B71-4360-A5AC-DD66B3222DDE}|To_do_list.csproj|c:\\users\\moham\\source\\repos\\groupb\\to_do_list\\services\\taskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B981AF6-9B71-4360-A5AC-DD66B3222DDE}|To_do_list.csproj|solutionrelative:services\\taskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "To_do_list.csproj",
+              "DocumentMoniker": "C:\\Users\\moham\\source\\repos\\GroupB\\To_do_list\\To_do_list.csproj",
+              "RelativeDocumentMoniker": "To_do_list.csproj",
+              "ToolTip": "C:\\Users\\moham\\source\\repos\\GroupB\\To_do_list\\To_do_list.csproj",
+              "RelativeToolTip": "To_do_list.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-11T18:24:51.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TaskServiceIntegrationTests.cs",
+              "DocumentMoniker": "C:\\Users\\moham\\source\\repos\\GroupB\\Todolist.Tests\\TaskServiceIntegrationTests.cs",
+              "RelativeDocumentMoniker": "..\\Todolist.Tests\\TaskServiceIntegrationTests.cs",
+              "ToolTip": "C:\\Users\\moham\\source\\repos\\GroupB\\Todolist.Tests\\TaskServiceIntegrationTests.cs",
+              "RelativeToolTip": "..\\Todolist.Tests\\TaskServiceIntegrationTests.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T18:57:24.629Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TaskServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\moham\\source\\repos\\GroupB\\Todolist.Tests\\TaskServiceTests.cs",
+              "RelativeDocumentMoniker": "..\\Todolist.Tests\\TaskServiceTests.cs",
+              "ToolTip": "C:\\Users\\moham\\source\\repos\\GroupB\\Todolist.Tests\\TaskServiceTests.cs",
+              "RelativeToolTip": "..\\Todolist.Tests\\TaskServiceTests.cs",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAwwJEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T18:57:12.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TasksController.cs",
+              "DocumentMoniker": "C:\\Users\\moham\\source\\repos\\GroupB\\To_do_list\\Controllers\\TasksController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TasksController.cs",
+              "ToolTip": "C:\\Users\\moham\\source\\repos\\GroupB\\To_do_list\\Controllers\\TasksController.cs",
+              "RelativeToolTip": "Controllers\\TasksController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAuwCUAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T10:28:22.42Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TaskService.cs",
+              "DocumentMoniker": "C:\\Users\\moham\\source\\repos\\GroupB\\To_do_list\\Services\\TaskService.cs",
+              "RelativeDocumentMoniker": "Services\\TaskService.cs",
+              "ToolTip": "C:\\Users\\moham\\source\\repos\\GroupB\\To_do_list\\Services\\TaskService.cs",
+              "RelativeToolTip": "Services\\TaskService.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwBUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T10:22:07.073Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

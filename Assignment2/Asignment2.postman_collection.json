@@ -1,0 +1,213 @@
+{
+	"info": {
+		"_postman_id": "c08cd496-db55-482f-9c2d-68bb41a1e1bf",
+		"name": "Asignment2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25871429"
+	},
+	"item": [
+		{
+			"name": "GetAllTasks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7299/api/tasks",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7299",
+					"path": [
+						"api",
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetTask",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7299/api/Tasks/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7299",
+					"path": [
+						"api",
+						"Tasks",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllCategories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7299/api/Tasks/categories",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7299",
+					"path": [
+						"api",
+						"Tasks",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostTask",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"title\": \"Buy Groceries\",\r\n        \"description\": \"Buy fruits, vegetables, and milk\",\r\n        \"deadline\": \"2024-09-24T21:42:19.5504745+02:00\",\r\n        \"isCompleted\": false,\r\n        \"categoryId\": 2\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7299/api/Tasks",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7299",
+					"path": [
+						"api",
+						"Tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostCategories",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Personal\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7299/api/Tasks/categories",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7299",
+					"path": [
+						"api",
+						"Tasks",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutTask",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"title\": \"Sell Groceries\",\r\n        \"description\": \"Sell fruits, vegetables, and milk\",\r\n        \"deadline\": \"2024-09-24T21:42:19.5504745+02:00\",\r\n        \"isCompleted\": true,\r\n        \"categoryId\": 2\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7299/api/Tasks/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7299",
+					"path": [
+						"api",
+						"Tasks",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteTask",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7299/api/Tasks/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7299",
+					"path": [
+						"api",
+						"Tasks",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "completeTask",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7299/api/Tasks/1/complete",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7299",
+					"path": [
+						"api",
+						"Tasks",
+						"1",
+						"complete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

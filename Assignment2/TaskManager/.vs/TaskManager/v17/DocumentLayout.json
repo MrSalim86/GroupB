@@ -1,0 +1,123 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\moham\\source\\repos\\GroupB_Opgave2\\TaskManager\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4B981AF6-9B71-4360-A5AC-DD66B3222DDE}|TaskManager.csproj|c:\\users\\moham\\source\\repos\\groupb_opgave2\\taskmanager\\model\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B981AF6-9B71-4360-A5AC-DD66B3222DDE}|TaskManager.csproj|solutionrelative:model\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B981AF6-9B71-4360-A5AC-DD66B3222DDE}|TaskManager.csproj|c:\\users\\moham\\source\\repos\\groupb_opgave2\\taskmanager\\controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B981AF6-9B71-4360-A5AC-DD66B3222DDE}|TaskManager.csproj|solutionrelative:controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B981AF6-9B71-4360-A5AC-DD66B3222DDE}|TaskManager.csproj|c:\\users\\moham\\source\\repos\\groupb_opgave2\\taskmanager\\services\\taskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B981AF6-9B71-4360-A5AC-DD66B3222DDE}|TaskManager.csproj|solutionrelative:services\\taskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B981AF6-9B71-4360-A5AC-DD66B3222DDE}|TaskManager.csproj|c:\\users\\moham\\source\\repos\\groupb_opgave2\\taskmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B981AF6-9B71-4360-A5AC-DD66B3222DDE}|TaskManager.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59D19683-B9DA-4256-BD84-A2B8EBC15B36}|..\\TaskManager.Test\\TaskManager.Tests.csproj|c:\\users\\moham\\source\\repos\\groupb_opgave2\\taskmanager.test\\taskservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59D19683-B9DA-4256-BD84-A2B8EBC15B36}|..\\TaskManager.Test\\TaskManager.Tests.csproj|c:\\users\\moham\\source\\repos\\groupb_opgave2\\taskmanager.test\\taskserviceintegrationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\moham\\source\\repos\\GroupB_Opgave2\\TaskManager\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\moham\\source\\repos\\GroupB_Opgave2\\TaskManager\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T20:09:33.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TasksController.cs",
+              "DocumentMoniker": "C:\\Users\\moham\\source\\repos\\GroupB_Opgave2\\TaskManager\\Controllers\\TasksController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TasksController.cs",
+              "ToolTip": "C:\\Users\\moham\\source\\repos\\GroupB_Opgave2\\TaskManager\\Controllers\\TasksController.cs",
+              "RelativeToolTip": "Controllers\\TasksController.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAIwG4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T20:03:48.845Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TaskService.cs",
+              "DocumentMoniker": "C:\\Users\\moham\\source\\repos\\GroupB_Opgave2\\TaskManager\\Services\\TaskService.cs",
+              "RelativeDocumentMoniker": "Services\\TaskService.cs",
+              "ToolTip": "C:\\Users\\moham\\source\\repos\\GroupB_Opgave2\\TaskManager\\Services\\TaskService.cs",
+              "RelativeToolTip": "Services\\TaskService.cs",
+              "ViewState": "AgIAAHoAAAAAAAAAAIAwwIgAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T19:41:13.119Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TaskServiceIntegrationTests.cs",
+              "DocumentMoniker": "C:\\Users\\moham\\source\\repos\\GroupB_Opgave2\\TaskManager.Test\\TaskServiceIntegrationTests.cs",
+              "RelativeDocumentMoniker": "..\\TaskManager.Test\\TaskServiceIntegrationTests.cs",
+              "ToolTip": "C:\\Users\\moham\\source\\repos\\GroupB_Opgave2\\TaskManager.Test\\TaskServiceIntegrationTests.cs",
+              "RelativeToolTip": "..\\TaskManager.Test\\TaskServiceIntegrationTests.cs",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAAAFkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T19:41:02.487Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\moham\\source\\repos\\GroupB_Opgave2\\TaskManager\\Model\\Category.cs",
+              "RelativeDocumentMoniker": "Model\\Category.cs",
+              "ToolTip": "C:\\Users\\moham\\source\\repos\\GroupB_Opgave2\\TaskManager\\Model\\Category.cs",
+              "RelativeToolTip": "Model\\Category.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAqwBMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T19:40:36.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TaskServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\moham\\source\\repos\\GroupB_Opgave2\\TaskManager.Test\\TaskServiceTests.cs",
+              "RelativeDocumentMoniker": "..\\TaskManager.Test\\TaskServiceTests.cs",
+              "ToolTip": "C:\\Users\\moham\\source\\repos\\GroupB_Opgave2\\TaskManager.Test\\TaskServiceTests.cs",
+              "RelativeToolTip": "..\\TaskManager.Test\\TaskServiceTests.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAUwB0BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T19:37:54.222Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,5 +1,4 @@
-# Let's create the README file with the content provided.
-readme_content = """
+
 # 🎓 **School Assignment: Software Quality** 🛠️
 
 ![Project Status](https://img.shields.io/badge/Project%20Status-Active-green) ![Tests](https://img.shields.io/badge/Tests-Passing-brightgreen) ![License](https://img.shields.io/badge/License-MIT-blue)

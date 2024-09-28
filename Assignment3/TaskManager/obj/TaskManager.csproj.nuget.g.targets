@@ -2,6 +2,11 @@
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)microsoft.extensions.apidescription.server\6.0.5\build\Microsoft.Extensions.ApiDescription.Server.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.apidescription.server\6.0.5\build\Microsoft.Extensions.ApiDescription.Server.targets')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.netframework.analyzers\3.3.2\build\Microsoft.NetFramework.Analyzers.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.netframework.analyzers\3.3.2\build\Microsoft.NetFramework.Analyzers.targets')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.netcore.analyzers\3.3.2\build\Microsoft.NetCore.Analyzers.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.netcore.analyzers\3.3.2\build\Microsoft.NetCore.Analyzers.targets')" />
     <Import Project="$(NuGetPackageRoot)microsoft.extensions.logging.abstractions\7.0.0\buildTransitive\net6.0\Microsoft.Extensions.Logging.Abstractions.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.logging.abstractions\7.0.0\buildTransitive\net6.0\Microsoft.Extensions.Logging.Abstractions.targets')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.codequality.analyzers\3.3.2\build\Microsoft.CodeQuality.Analyzers.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.codequality.analyzers\3.3.2\build\Microsoft.CodeQuality.Analyzers.targets')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.codeanalysis.versioncheckanalyzer\3.3.2\build\Microsoft.CodeAnalysis.VersionCheckAnalyzer.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.codeanalysis.versioncheckanalyzer\3.3.2\build\Microsoft.CodeAnalysis.VersionCheckAnalyzer.targets')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.codeanalysis.fxcopanalyzers\3.3.2\build\Microsoft.CodeAnalysis.FxCopAnalyzers.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.codeanalysis.fxcopanalyzers\3.3.2\build\Microsoft.CodeAnalysis.FxCopAnalyzers.targets')" />
   </ImportGroup>
 </Project>

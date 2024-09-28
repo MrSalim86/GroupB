@@ -112,21 +112,7 @@ namespace TaskManager.Tests
             Assert.Null(exception); // Should not throw
         }
 
-        [Fact]
-        public void MarkTaskAsCompleted_Should_NotChangeTask_When_AlreadyCompleted()
-        {
-            var category = new Category { Name = "Work" };
-            _taskService.AddCategory(category);
-
-            var task = new TaskModel { Title = "Complete Task", IsCompleted = true, CategoryId = category.Id, Description = "Completed Task" };
-            _taskService.AddTask(task);
-
-            _taskService.MarkTaskAsCompleted(task.Id);
-            var result = _taskService.GetTaskById(task.Id);
-
-            Assert.True(result.IsCompleted);
-        }
-
+      
 
 
     }

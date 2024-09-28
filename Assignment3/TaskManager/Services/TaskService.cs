@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics.Eventing.Reader;
 using System.Linq;
+using System.Threading.Tasks;
 using TaskManager.Data;
 using TaskManager.Model;
 
@@ -62,10 +63,28 @@ namespace TaskManager.Services
 
         }
 
-        public string CheckingInputs(TaskModel task)
+        public (bool Isvalid, string ErrorMessage) TitleLength(string Title) 
+        {
+
+            if (Title.Length < 3)
+            {
+                return (false, "Title is too short. It must be at least 3 characters.");
+            }
+            if (Title.Length > 30)
+            {
+                return (false, "Title is too long. It must be less than or equal to 30 characters.");
+            }
+
+            return (true, "Title is valid.");
+
+
+
+        }
+
+        public (bool Isvalid, string ErrorMessage) CheckingInputs(TaskModel task)
         {
             var InputMsg = "";
-
+            var CheckError = true;
             if (task == null)
             {
                 throw new ArgumentNullException(nameof(task), "Task cannot be null.");
@@ -73,30 +92,33 @@ namespace TaskManager.Services
 
             if (task != null)
             {
-                if (string.IsNullOrEmpty(task.Title) || task.Title.Length <= 3)
+                if (!TitleLength(task.Title).Isvalid)
                 {
-                    Console.WriteLine("Title is required.");
-                    InputMsg = "Title is required.";
+                   InputMsg = TitleLength(task.Title).ErrorMessage;
+                    CheckError = false;
                 }
                 if (task.Deadline == default)
                 {
                     Console.WriteLine("Deadline is required.");
                     InputMsg = InputMsg + " Deadline is required.";
+                    CheckError = false;
                 }
                 if (task.CategoryId <= 0)
                 {
                     Console.WriteLine("Title is required.");
                     InputMsg = InputMsg + " Invalid CategoryId.";
+                    CheckError = false;
                 }
                 if (string.IsNullOrEmpty(task.Description))
                 {
                     Console.WriteLine("Title is required.");
                     InputMsg = InputMsg + " Description is either null or empty.";
+                    CheckError = false;
                 }       
                   
             }
        
-            return InputMsg;
+            return (CheckError, InputMsg);
 
         }
 
@@ -104,7 +126,7 @@ namespace TaskManager.Services
         // Add a new task
         public string AddTask(TaskModel task)
         {
-            if (CheckingInputs(task).Length <=0)
+            if (CheckingInputs(task).Isvalid)
             {
                 var category = _context.Categories.FirstOrDefault(c => c.Id == task.CategoryId);
                 if (category != null)
@@ -120,7 +142,7 @@ namespace TaskManager.Services
                 return "OK";
             }
 
-            return CheckingInputs(task);
+            return CheckingInputs(task).ErrorMessage;
          
         }
 

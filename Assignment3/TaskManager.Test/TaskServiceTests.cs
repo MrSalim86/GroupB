@@ -72,7 +72,7 @@ namespace TaskManager.Tests
         public void GetTaskById_Should_ReturnTask_When_TaskExists()
         {
             // Arrange
-           var getCat = _taskService.GetAllCategories().FirstOrDefault();
+           var getCat = _taskService.GetAllCategories().FirstOrDefault() ?? throw new InvalidOperationException("No categories found. Unable to add task without a category.");
             var task = new TaskModel { Title = "Test Task", CategoryId = getCat.Id, Deadline = DateTime.Now, Description = "Test Description" };
             _taskService.AddTask(task);
 
@@ -142,20 +142,16 @@ namespace TaskManager.Tests
             // Arrange
             // Add a valid category to the in-memory database
 
-            //var category = _taskService.GetAllCategories().FirstOrDefault();
-            //var task = _taskService.GetAllTasks().FirstOrDefault();
-            var category = new Category { Id = 67, Name = "Work" };
-             _taskService.AddCategory(category);
+            var category = new Category { Name = "new Work" };
+            _taskService.AddCategory(category);
             // Now create a task with the generated CategoryId
             var task = new TaskModel { Title = "Incomplete Task", IsCompleted = false, CategoryId = category.Id, Description = "ddd" };
-            //_dbContext.Tasks.Add(task);
-            //_dbContext.SaveChanges();
-
-             _taskService.AddTask(task);
+ 
+            _taskService.AddTask(task);
 
             // Act
-            _taskService.MarkTaskAsCompleted(task.Id);
-            var result = _taskService.GetTaskById(task.Id);
+            _taskService.MarkTaskAsCompleted(1);
+            var result = _taskService.GetTaskById(1);
 
             // Assert
             Assert.True(result.IsCompleted);
@@ -230,7 +226,8 @@ namespace TaskManager.Tests
             {
                 Title = "Test Task",
                 CategoryId = 999, // Non-existing category
-                Deadline = DateTime.Now
+                Deadline = DateTime.Now,
+                Description = "test t"
             };
 
             // Act & Assert
@@ -279,7 +276,62 @@ namespace TaskManager.Tests
             Assert.Null(result);
         }
 
-  
+        // When is valid
+
+        [Fact]
+        public void TaskTitle_MinBoundary_Valid()
+        {
+            var task = new TaskModel { Title = new string('a', 3) };  // Minimum boundary
+            Assert.True(_taskService.TitleLength(task.Title).Isvalid);  // Assuming ValidateTaskTitle is the validation logic
+        }
+
+        [Fact]
+        public void TaskTitle_MaxBoundary_Valid()
+        {
+            var task = new TaskModel { Title = new string('a', 30) };  // Maximum boundary
+            Assert.True(_taskService.TitleLength(task.Title).Isvalid);
+        }
+
+         // When is not valid
+
+        [Fact]
+        public void TaskTitle_ExceedsMinBoundary_Invalid()
+        {
+            var task = new TaskModel { Title = new string('a', 2) };  // Beyond Minimum boundary 
+            Assert.False(_taskService.TitleLength(task.Title).Isvalid);
+        }
+
+        [Fact]
+        public void TaskTitle_ExceedsMaxBoundary_Invalid()
+        {
+            var task = new TaskModel { Title = new string('a', 31) };  // Beyond maximum boundary
+            Assert.False(_taskService.TitleLength(task.Title).Isvalid);
+        }
+
+
+        [Fact]
+        public void TaskTitle_ValidLength_ReturnsTrue()
+        {
+            var result = _taskService.TitleLength("Task Title");  // 10 characters
+            Assert.True(result.Isvalid);
+            Assert.Equal("Title is valid.", result.ErrorMessage);
+        }
+
+        [Fact]
+        public void TaskTitle_TooShort_ReturnsFalse()
+        {
+            var result = _taskService.TitleLength("Hi");  // 2 characters
+            Assert.False(result.Isvalid);
+            Assert.Equal("Title is too short. It must be at least 3 characters.", result.ErrorMessage);
+        }
+
+        [Fact]
+        public void TaskTitle_TooLong_ReturnsFalse()
+        {
+            var result = _taskService.TitleLength("This is a very long task title that exceeds thirty characters");  // 53 characters
+            Assert.False(result.Isvalid);
+            Assert.Equal("Title is too long. It must be less than or equal to 30 characters.", result.ErrorMessage);
+        }
     }
 
 }

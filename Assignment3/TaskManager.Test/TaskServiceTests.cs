@@ -106,8 +106,7 @@ namespace TaskManager.Tests
         [Fact]
         public void UpdateTask_Should_UpdateTask_When_Valid()
         {
-            var getCategory = _taskService.GetAllCategories().FirstOrDefault();
-
+            var getCategory = _taskService.GetAllCategories().FirstOrDefault() ?? throw new InvalidOperationException("No categories found. Unable to add task without a category.");
             // Arrange
             var task = new TaskModel { Title = "Old Title", CategoryId = getCategory.Id, Deadline = DateTime.Now, Description = "Test Description" };
             _taskService.AddTask(task);
@@ -116,9 +115,9 @@ namespace TaskManager.Tests
 
             // Act
             _taskService.UpdateTask(task.Id, updatedTask);
-
+           
             // Assert
-            var fetchedTask = _dbContext.Tasks.Find(task.Id);
+            var fetchedTask = _dbContext.Tasks.Find(task.Id) ?? throw new InvalidOperationException("No task found.");
             Assert.Equal("New Title", fetchedTask.Title);
         }
 
